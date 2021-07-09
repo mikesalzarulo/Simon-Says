@@ -3,9 +3,12 @@ let buttonColours = ["red", "blue", "green", "yellow"];
 
 let gamePattern = [];
 
+let userClickedPattern = [];
 
 $(".btn").click(function(){
-alert("hi");
+
+  let userChosenColour = $(this).attr("id");
+  userClickedPattern.push(userChosenColour);
 
 });
 
